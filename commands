@@ -87,7 +87,7 @@ case "$1" in
     else
       CID=$(< $DOKKU_LOGSPOUT_ROOT/CONTAINER)
       if ! (docker ps -q --no-trunc | grep -q "$CID"); then
-        docker rm -f logspout
+        docker rm -f $CID
         do_run
       fi
     fi
