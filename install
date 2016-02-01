@@ -9,4 +9,4 @@ mkdir -p $DOKKU_LOGSPOUT_ROOT
 [[ ! -f $DOKKU_LOGSPOUT_OPTIONS ]] && echo "export DOKKU_LOGSPOUT_PORT=$DOKKU_LOGSPOUT_DEFAULT_PORT" > $DOKKU_LOGSPOUT_OPTIONS
 
 chown -R dokku:dokku $DOKKU_LOGSPOUT_ROOT
-docker pull gliderlabs/logspout:latest
+docker pull gliderlabs/logspout:master
